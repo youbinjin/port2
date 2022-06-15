@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : sub.css
+ * description : 서브 CSS
+******************************************************** */
+
+/* ****** 서브페이지 상단 ***** */
+#subMainCon{background-size: cover !important;}
+#subMainCon .sub-con-inner{padding: 0 100px; box-sizing:border-box; position: relative; width: 100%; height: 100%; color: #fff;}
+#subMainCon .black-txt{padding: 0 100px; box-sizing:border-box; position: relative; width: 100%; height: 100%; color: #000;}
+#subMainCon .sub-top-tit{position:absolute; /*top:280px;*/ top:27%}
+#subMainCon .sub-top-tit p{font-weight:700; font-size:30px; letter-spacing:0}
+#subMainCon .sub-top-tit h3{font-weight: 300; font-size: 68px; letter-spacing: -0.72px; margin-top: 40px;}
+#subMainCon .sub-top-tit h3 b{font-weight: 500;} 
+#subMainCon .sub-top-tit h3 strong{font-weight: 700;} 
+#subMainCon .sub-top-tit a{margin-top:70px; display:flex; align-items:center; border: 1px solid rgba(255,255,255,0.7); width: 180px; height: 50px; justify-content: center; position: relative;}
+#subMainCon .sub-top-tit .black-clack-btn{margin-top:70px; display:flex; align-items:center; border: 1px solid rgba(0,0,0,0.7); width: 180px; height: 50px; justify-content: center; position: relative;}
+#subMainCon .sub-top-tit a em{font-weight: 400; font-size: 14px; letter-spacing: 0; color:#fff; transition:color 0.3s; position: relative;}
+#subMainCon .sub-top-tit .black-clack-btn em{font-weight: 400; font-size: 14px; letter-spacing: 0; color:#000; transition:color 0.3s; position: relative;}
+#subMainCon .sub-top-tit a:before{
+	position:absolute; 
+	bottom:0px; 
+	left:0; 
+	width:100%; 
+	height:100%; 
+	background-color:#fff; 
+	content:""; 
+	transition:transform 0.5s; 
+	transform: scaleY(0); 
+	transform-origin:center top;  
+}
+#subMainCon .sub-top-tit .black-clack-btn:before{
+	position:absolute; 
+	bottom:0px; 
+	left:0; 
+	width:100%; 
+	height:100%; 
+	background-color:#000; 
+	content:""; 
+	transition:transform 0.5s; 
+	transform: scaleY(0); 
+	transform-origin:center top;  
+}
+#subMainCon .sub-top-tit a:hover:before{ transform: scaleY(1); transform-origin:center bottom;  }
+#subMainCon .sub-top-tit a:hover em{color:#000}
+#subMainCon .sub-top-tit .black-clack-btn:hover em{color:#fff}
+#subMainCon .sub-info-con{margin-bottom: 120px; display: flex; width: 100%; justify-content: space-between; align-items: end; position: absolute; bottom: 0; left: 0; padding: 0 100px; box-sizing: border-box;}
+#subMainCon .sub-info-con .lf-con strong{display: block; font-weight: 600; font-size: 18px; letter-spacing: 0; padding-bottom: 12px;}
+#subMainCon .sub-info-con .lf-con .info-list dl{display: flex; font-weight: 400; font-size: 16px; letter-spacing: 0; opacity: 0.9; margin-top: 18px;}
+#subMainCon .sub-info-con .lf-con .info-list dl dt{width: 95px;}
+#subMainCon .sub-info-con .rt-con{text-align: right;}
+#subMainCon .sub-info-con .rt-con .award-logo{display: block; margin-bottom: 30px;}
+#subMainCon .sub-info-con .rt-con .award-info{display:flex}
+#subMainCon .sub-info-con .rt-con .award-info dt{font-weight: 600; font-size: 18px; letter-spacing: 0; margin-right: 30px;}
+#subMainCon .sub-info-con .rt-con .award-info dd{font-weight: 400; font-size: 16px; letter-spacing: -0.75px; }
+#subMainCon .sub-info-con .rt-con .award-info dd b{font-weight: 600;}
+
+/* ****** 서브페이지 설명부분 ***** */
+#subInnerCon{text-align:center}
+#subInnerCon .sub-con{position: relative;}
+#subInnerCon .sub-con span{display: block;}
+@media all and ( max-width: 1919px ){
+	#subInnerCon .sub-con img{max-width: 100%;}
+}
